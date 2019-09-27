@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
     type.each do |bird_name|
       x.each do |item|
         if bird_name === item
-          final[item][:gender] << gender.to_s
+          final_hash[item][:gender] << gender.to_s
         end 
       end 
     end 
@@ -31,11 +31,11 @@ def nyc_pigeon_organizer(data)
     name.each do |bird_name|
       x.each do |item|
         if bird_name === item
-          final[item][:lives] << location
+          final_hash[item][:lives] << location
         end 
       end 
     end 
   end 
   
-  return final 
+  return final_hash 
 end 
